@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+h1{
+    font-size: 5.714285714285714vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6.349206349206349vh;
+    margin-bottom: 9.523809523809524vh;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9.523809523809524vh;
+}
+#search-input{
+    width: 60%;
+    max-width: 63.492063492063494vh;
+    padding: 1.6vh 3.1746031746031744vh;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: .6vh;
+    font-size: 2.857142857142857vh;
+    color: #333;
+}
+#search-button{
+    padding: 1.6vh 3.1746031746031744vh;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 2.857142857142857vh;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: .6vh;
+    transition: background-color .3s ease-in-out;
+}
+#search-button:hover{
+    background-color: #3e8e41;
+}
+.image img{
+    width: 100%;
+    height: 31.746031746031747vh;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+}
+.image:hover img{
+    transform: scale(1.05);
+}
+.Search-result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.image a{
+    padding: 1.6vh;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+}
+.image:hover a{
+    background-color: rgba(0,0,0,0.1);
+}
+.image{
+    margin-bottom: 9.523809523809524vh;
+    width: 30%;
+    border-radius: .6vh;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+#showmore{
+    background-color: #008cba;
+    border: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    margin:20px auto;
+    display: block;
+    border-radius: .6vh;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+    display: none;
+}
+@media screen and (max-width:768px){
+    .image{
+        width: 45%;
+    }
+}
+@media screen and (max-width:480px){
+    .image{
+        width: 100%;
+    }
+    form{
+        flex-direction: column;
+    }
+    #search-input{
+        margin-bottom:20px ;
+        width: 90vw;
+    }
+    button{
+        width: 90vw;
+    }
+}
+#showmore:hover{
+    background-color: #0077b5;
+}
+/* .btn{
+    display: flex;
+    justify-content: center;
+} */
